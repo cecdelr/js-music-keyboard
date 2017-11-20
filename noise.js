@@ -12,4 +12,11 @@ $(document).ready(() => {
     console.log(note);
     playNote(note);
   });
+
+  // key press function
+  $('body').keydown((event) => {
+    const note = event.key;
+    console.log(note);
+    playNote(note);
+  });
 });
